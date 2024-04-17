@@ -1,0 +1,14 @@
+<div class="text-center border-card mb-2 bg-slate-900 rounded-lg w-full h-[200px] items-center ">
+
+  <shared-lazy-image [url]="gif.images.downsized_medium.url" [alt]="gif.title || 'No name'"></shared-lazy-image>
+  <!-- <img class=""
+  [src]="gif.images.downsized_medium.url" [alt]="gif.title"> -->
+
+  <div class="">
+    <p class="text-white font-medium">
+      {{ gif.title || 'No title' }}
+    </p>
+
+  </div>
+
+</div>

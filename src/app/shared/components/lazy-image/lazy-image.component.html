@@ -1,0 +1,8 @@
+<!-- <p class="text-green-400">lazy-image works!</p> -->
+
+
+<div class="flex justify-center">
+  <img [src]="url" [alt]="alt" (load)="onLoad()" [ngStyle]="{display: hasLoaded ? '' : 'none'}" class="animate__animated animate__fadeIn">
+  <img *ngIf="!hasLoaded"
+  src="assets/loader-circles.svg" height="40" width="" class="mt-3">
+</div>

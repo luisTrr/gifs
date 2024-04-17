@@ -1,1 +1,16 @@
 /* You can add global styles to this file, and also import other style files */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components{
+  .btn{
+    @apply border-slate-500 border-[2px] rounded-md px-2 bg-sky-200 hover:bg-slate-600 font-semibold hover:font-semibold hover:text-white mb-3 w-[100%] h-9;
+  }
+  .in-put{
+    @apply w-[100%] p-1 focus:border-blue-600 focus:outline-none border-slate-200 border-[2px] rounded-[15px];
+  }
+  .borde-card{
+    @apply border-gray-400 border-[1px] rounded-lg p-6 w-[100%];
+  }
+}
